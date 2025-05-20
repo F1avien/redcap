@@ -1,0 +1,4 @@
+sudo crontab -e -u www-data
+
+# REDCap Cron Job (runs every minute)
+* * * * * /usr/bin/php8.4 /var/www/html/redcap/cron.php > /dev/null
